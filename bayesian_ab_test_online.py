@@ -101,13 +101,16 @@ plt.figure()
 
 plt.subplot(211)
 plt.plot(probs_bayesian)
-plt.ylim([0, 1])
 plt.title('Bayesian A/B testing')
+plt.ylabel('Prob(pA < pB)')
+plt.ylim([0, 1])
 
 plt.subplot(212)
 plt.plot(probs_bayesian_online, color='red')
+plt.title('Online Bayesian A/B testing')
+plt.xlabel('Visitor number')
+plt.ylabel('Prob(pA < pB)')
 plt.ylim([0, 1])
-plt.title('Online A/B testing')
 
 plt.show()
 
