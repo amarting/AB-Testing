@@ -2,7 +2,8 @@
 """
 The bayesian_test function is based on a post by Evan Miller.
 More at http://www.evanmiller.org/bayesian-ab-testing.html
-The bayesian_function_update is explained in my blog, wordpress.salasboni.com
+The bayesian_function_update is explained in my blog,
+https://salasboni.wordpress.com/2015/02/06/online-formula-bayesian-ab-testing/
 Author: Rebeca Salas-Boni
 Email: salasboni@gmail.com
 """
