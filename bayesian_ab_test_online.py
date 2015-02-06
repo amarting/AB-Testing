@@ -90,7 +90,7 @@ from random import random
 
 total_number_of_visitors = 1000
 p_A_true = .2
-p_B_true = .25
+p_B_true = .3
 prob_of_showing_version_A = .5
 
 probs_bayesian, probs_bayesian_online = generate_one_experiment(total_number_of_visitors,
@@ -102,10 +102,12 @@ plt.figure()
 plt.subplot(211)
 plt.plot(probs_bayesian)
 plt.ylim([0, 1])
+plt.title('Bayesian A/B testing')
 
 plt.subplot(212)
 plt.plot(probs_bayesian_online, color='red')
 plt.ylim([0, 1])
+plt.title('Online A/B testing')
 
 plt.show()
 
